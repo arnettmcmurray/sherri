@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slideshow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: red; /* make the text red */
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .slideshow {
+      position: relative;
+      width: 90%;
+      max-width: 700px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      background: black;
+      margin-bottom: 20px;
+    }
+    .slideshow img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: black;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    .slideshow img.active {
+      opacity: 1;
+    }
+
+    .event-details {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #ddd;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    /* responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .slideshow {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1 style="color: #FF6B6B;">Can't Wait to See YOU!</h1>
+
+<div class="slideshow" id="slideshow">
+<!-- 13 teams -->
+  <img src="./assets/teams/team01chi.jpg" data-duration="2000">
+  <img src="./assets/teams/LaPower.JPG" data-duration="2000">
+  <img src="./assets/teams/MRC.jpeg" data-duration="2000">
+  <img src="./assets/teams/team20椰风.jpg" data-duration="2000">
+  <img src="./assets/teams/beida.jpg" data-duration="2000"> 
+  <img src="./assets/teams/team0291.jpg" data-duration="2000">
+  <img src="./assets/teams/SU.JPG" data-duration="2000">
+  <img src="./assets/teams/team16Japan.jpg" data-duration="2000">
+  <img src="./assets/teams/team15Red.jpg" data-duration="2000">
+  <img src="./assets/teams/team10dash.jpg" data-duration="2000"> 
+  <img src="./assets/teams/team11追风.jpg" data-duration="2000">
+  <img src="./assets/teams/team13岚山.jpg" data-duration="2000">
+  <img src="./assets/teams/05爱跑.jpeg" data-duration="2000">
+  <img src="./assets/teams/team12龙帮.jpg" data-duration="2000">
+
+
+
+
+  <!-- 17 个人 -->
+  <img src="./assets/individuals/Lujia Zhao.jpeg">
+  <img src="./assets/individuals/01- Jones Wu.jpg">
+  <img src="./assets/individuals/Liping Song.jpeg">
+  <img src="./assets/individuals/aipao2.jpeg">
+  <img src="./assets/individuals/A Ja Loy.jpg"> 
+  <img src="./assets/individuals/Daniel Lee.jpg">
+  <img src="./assets/individuals/Ryan Zhang.png">
+  <img src="./assets/individuals/Wei Tao.jpeg">
+  <img src="./assets/individuals/Dash_m.jpg" >
+  <img src="./assets/individuals/Dash_w.jpg" > 
+  <img src="./assets/individuals/YAB - yu albert.jpg">
+  <img src="./assets/individuals/Lujia.JPG">
+  <img src="./assets/individuals/Yin_Fuyu.jpg">
+  <img src="./assets/individuals/MaChenYu.jpg">
+  <img src="./assets/individuals/Curtis.jpeg">
+  <img src="./assets/individuals/Zhenming Dai.jpeg">
+  <img src="./assets/individuals/霍子祺.jpg">
+  <img src="./assets/individuals/20.jpg">
+  <img src="./assets/individuals/21.jpg">
+  <img src="./assets/individuals/MaryLiu.JPG">
+  <img src="./assets/individuals/22.jpeg">
+  <img src="./assets/individuals/23.jpg">
+  <img src="./assets/individuals/24.jpeg">
+</div>
+
+<div class="event-details">
+  ⏰ 10月11日周六 11:30 AM – 2:00 PM<br>
+  🏠 Conaway Center, Columbia College Chicago<br>
+  1104 S Wabash, 1st Floor, Chicago
+</div>
+
+<script>
+  const slides = document.querySelectorAll("#slideshow img");
+
+  // Automatically set alt text from file name
+  slides.forEach(slide => {
+    const fileName = slide.src.split("/").pop().split(".")[0]; // remove path & extension
+    slide.alt = fileName;
+  });
+
+  let index = 0;
+
+  function showNextSlide() {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+
+    // get duration for this slide (in milliseconds)
+    const duration = parseInt(slides[index].dataset.duration) || 1000;
+
+    // next slide index
+    index = (index + 1) % slides.length;
+
+    // schedule next slide
+    setTimeout(showNextSlide, duration);
+  }
+
+  // start the slideshow
+  showNextSlide();
+</script>
+
+</body>
+</html>

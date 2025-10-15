@@ -1,0 +1,184 @@
+The goal of this website is not only to share information about my own running club, but also to connect all Chinese runners around the Chicago Marathon. We aim to foster collaboration among different running groups, promote group runs, and encourage visits between teams. When I travel to a new place, I hope to find local running groups to run with—sharing the same culture, language, and passion for running.
+Test Again
+Currently, there are multiple pages on the site:
+chirunners.com and chirunners.com/carbloading.html were created using WordPress. However, since WordPress feels too heavy for my needs, the rest of the pages are built purely with HTML and JavaScript.
+
+The most important page is teams.html.
+
+
+chirunners.com
+chirunners.com/carbloading.html
+chirunners.com/html/teams.html
+chirunners.com/html/slideshow.html
+chirunners.com/html/volunteers.html
+chirunners.com/html/faq.html
+
+Chiphotos.html 
+
+[1]English version:
+📸 Chi Running Club Photo Gallery — Powered by Face Recognition
+
+Chi Running Club is proud to provide Face Recognition Photos for all participants!
+With our smart photo system, you can easily find all your personal race photos — fast and effortlessly.
+
+👉 How it works:
+	1.	Scan your face — Simply upload or take a selfie using the link below.
+	2.	Let the system find you — Our technology will automatically match your face in all event photos.
+	3.	Enjoy your personal gallery — Instantly view, download, and share your photos with friends!
+
+No searching, no scrolling — just your memories, all in one place.
+Start now and relive your race moments!
+
+Chinese: 
+📸 芝加哥驰跑团人脸识别照片服务
+
+芝加哥驰跑团自豪地为跑者提供人脸识别照片服务！
+只需轻轻一扫，就能自动找到属于你的所有比赛照片——快捷又方便。
+
+👉 使用步骤：
+	1.	扫描人脸 —— 点击下方链接，上传或拍摄一张自拍照；
+	2.	系统自动识别 —— 我们的智能系统会自动匹配出你在赛事中的所有照片；
+	3.	查看你的专属相册 —— 即刻浏览、下载并分享你的精彩瞬间！
+
+无需翻找，无需筛选 —— 你的所有美好回忆，都在这里等你。
+立即体验，重温属于你的芝马时刻！
+
+
+[2]🏅 “The Photo I Like the Most” — Submission Instructions
+
+We’ve captured countless amazing moments from the Carbloading Party and Race Day, and now it’s your turn to share your favorite ones!
+
+We’re creating a special gallery called “The Photo I Like the Most”, featuring the most meaningful and memorable photos chosen by our runners.
+
+📸 How to Participate
+	1.	Select up to 2 photos that you love the most.
+	•	The photos can be from the Carbloading Event or Race Day.
+	2.	The photos must be taken by you, your friends, or teammates (not from professional photographers).
+	•	Please make sure there are no copyright issues.
+	3.	The photo can feature you alone or a group including you.
+	4.	Upload your photos using the link below (JPG or PNG format preferred).
+	5.	Add a short caption or note (optional) about why you love these photos — we may include your words in the gallery!
+
+⚠️ Important Notes
+	•	Please respect others’ privacy — only upload photos that everyone in the picture would be happy to share publicly.
+	•	By uploading, you agree that Chi Running Club may display your photo in our online or event gallery.
+
+Let’s celebrate every smile, effort, and memory that made this marathon so special.
+Thank you for sharing your favorite moments with us! ❤️
+
+Chinese Version:
+🏅 “我最喜欢的照片”——照片征集说明
+
+在加碳会和比赛当天，我们留下了无数精彩瞬间。
+现在，轮到你来分享你最喜欢的照片！
+
+我们将制作一个特别的相册栏目 —— “我最喜欢的照片”，展示每位跑者心中最有意义、最难忘的画面。
+
+📸 参与方式
+	1.	请选择最多 2 张你最喜欢的照片。
+	•	照片可以来自 加碳会 或 比赛当天。
+	2.	照片必须是由你本人、朋友或队友拍摄的，
+	•	请确保没有版权问题（不要上传由专业摄影师拍摄的照片）。
+	3.	照片内容可以是你本人，也可以是包含你的合照。
+	4.	通过下方上传链接提交照片（建议使用 JPG 或 PNG 格式）。
+	5.	（可选）可以附上一句简短说明或小故事，告诉我们你为什么喜欢这张照片——我们可能会在展示时一起刊登你的文字！
+
+⚠️ 注意事项
+	•	请尊重他人隐私，只上传所有入镜者都同意公开的照片。
+	•	上传照片即表示你同意芝加哥驰跑团在官方网站或活动展示中使用该照片。
+
+让我们一起记录每一个笑容、努力与感动的瞬间。
+感谢你与我们分享这份珍贵的回忆！❤️
+
+[3] “The Photo I Like the Most” Gallery, 
+🏃‍♀️ 1. Gallery Introduction (Short Description)
+
+Purpose: Explain what this gallery is and why it’s special.
+Example:
+
+Every photo here carries a story — of courage, friendship, and joy.
+These are the moments our runners love the most, captured at the Carbloading Party or on the Chicago Marathon course.
+Thank you to every participant who shared their favorite memories with us!
+
+⸻
+
+💬 2. Runner’s Comments or Quotes
+
+Purpose: Add personal stories behind the photos.
+Example:
+
+🗣️ “This photo reminds me how we supported each other at mile 20 — I almost cried when I saw it.”
+— Sarah L.
+
+You can display each quote below its photo, or as a hover text.
+
+⸻
+
+🌍 3. Event Context Section
+
+Purpose: Give new visitors a sense of when and where these moments happened.
+Example:
+
+The photos in this gallery were taken during the Chi Running Club Carbloading Party and the 2025 Chicago Marathon.
+Hundreds of runners from around the world came together to celebrate running, community, and friendship.
+
+⸻
+
+📸 4. Credits or Acknowledgements
+
+Purpose: Appreciate contributors and clarify rights.
+Example:
+
+All photos are shared by runners themselves or taken by their teammates.
+Please do not reuse photos without permission.
+Special thanks to our volunteer photographers and everyone who contributed their beautiful memories.
+
+⸻
+
+❤️ 5. Call to Action (for engagement)
+
+Purpose: Encourage others to participate or follow.
+Example:
+
+Want your photo featured next year?
+Join Chi Running Club and share your story!
+[Join Us] [Follow on Instagram] [Donate]
+
+⸻
+
+💡 Optional Design Ideas:
+	•	A mosaic-style photo grid with hover text (“Click to read my story”)
+	•	A carousel that auto-rotates through photos with captions
+	•	A “❤️ Most Loved” tag for photos with the most votes
+	•	A short video montage banner from the event
+
+🌟 1. Add a “Photographers’ Recognition” Section
+
+📸 Example Text (English + Chinese)
+
+Our Official Photographers | 官方摄影师团队
+
+Behind every amazing photo is a passionate photographer who captured your smiles, sweat, and unforgettable moments.
+Thank you to our ChiRunners Photography Team for your dedication and talent!
+
+每一张精彩的照片背后，都有一位默默付出的摄影师。
+感谢芝加哥驰跑团摄影团队，用镜头记录下每一个感动与欢笑！
+
+📷 Team Members:
+	•	Fengcheng Wang (“风城网事”) — Team Lead
+	•	David Zhang
+	•	Tony Liu
+	•	Yanan Chen
+	•	Kelly Zhou
+	•	(and all volunteer photographers who contributed to this gallery!)
+
+💡 3. Add a Dedicated Photographer Section at the Bottom
+If you want to make it visually attractive, you could display their portraits or a group photo, with short bios:
+
+🎞️ “I love capturing the moment when runners cross the finish line with pure joy.” — Tony Liu
+
+🏅 4. Optional: Add a “Thank You” Banner
+
+💖 Thank you to all ChiRunners photographers and volunteers —
+you helped make the 2025 Chicago Marathon an unforgettable memory for everyone!
+

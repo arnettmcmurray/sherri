@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f8f9fa;
+    }
+    .title {
+      text-align: center;  /* centers the text horizontally */
+      font-size: 2em;      /* optional: adjust size */
+      margin-top: 20px;    /* optional: space above */
+      margin-bottom: 20px; /* optional: space below */
+    }
+    .team-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+      max-width: 600px;
+      margin: 20px auto; /* center horizontally */
+
+    }
+    .team-header {
+      padding: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+      background: #0073e6;
+      color: #fff;
+    }
+
+    .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    pointer-events: none; /* allows clicks to pass through to video */
+  }
+    .team-photo {
+      width: 100%;
+      display: auto;
+    }
+
+    .team-video video {
+    width: 100%;       /* 自适应父容器宽度 */
+    max-width: 600px;  /* 桌面端最大宽度 */
+    height: auto;      /* 高度按比例自动调整 */
+    display: block;    /* 去掉 inline 默认间隙 */
+    margin: 0 auto;    /* 居中 */
+}
+    .team-content {
+      padding: 15px;
+      text-align: center;
+    }
+    .video-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #ff4b2b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .video-btn:hover {
+      background: #e63c1a;
+    }
+    .team-contact {
+      text-align: center; 
+      padding: 15px;
+      border-top: 1px solid #eee;
+    }
+    .team-contact ul {
+      list-style: none;
+      padding: 0;
+      margin: 5px 0 0 0;
+    }
+    .team-contact li {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="title"> 2025年芝马参赛团队 </h1>
+
+  <!-- Team 1 -->
+  <div class="team-card">
+    <div class="team-header">🇺🇸 芝加哥 驰（ChiRunners）</div>
+    <img src="./assets/teams/team01chi.jpg" alt="Chi Runners Team Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls>
+        <source src="./assets/videos/ChiRunners.mp4" type="video/mp4">
+        Your browser does not support txhe video tag.
+      </video>
+    </div>
+    <div class="team-contact">
+      <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系人: Sherri Liang-Zhou</strong></p>
+      <ul>
+        <li>Email: <a href="mailto:sherri@chirunners.org">sherri@chirunners.org</a></li>
+        <li>WeChat: 🟢💬 sherriliangzhou</li>
+        <li>📍 Lincolnshire, IL — 🏃‍♂️ 每周六日 6:45AM</li>
+        <li>📍 Bussiewoods, IL — 🏃‍♂️ 每周六日 7:30AM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header"> 🇨🇦 多伦多 91Camp（91 Running Camp）</div>
+    <img src="./assets/teams/team0291.jpg" alt="crit Runners Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls poster="./assets/91poster.jpg">
+        <source src="./assets/videos/0291.MP4" type="video/mp4">
+        Your browser does not support txhe video tag.
+      </video>
+    </div>
+
+    <div class="team-contact">
+      <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系人:91 Camp Admin</strong></p>
+      <ul>
+        <li>Email: <a href="mailto:toronto91camp@gmail.com">toronto91camp@gmail.com</a></li>
+        <li>WeChat: 🟢💬 toronto91</li>
+        <li>📍 25 Lanark Rd, Markham, ON L3R 9S1 — 🏃‍♂️ 每周日：7am</li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="team-card">
+    <div class="team-header"> 🇯🇵 东京 東跑联（Runtime & TOKYO）</div>
+    <img src="./assets/teams/team16Japan.jpg" alt="crit Runners Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls>
+        <source src="./assets/videos/07-Japan.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="team-contact">
+      <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系人:麦扣王 (王冬宇)</strong></p>
+      <ul>
+        <li>Email: <a href="mailto:outouu@gmail.com">outouu@gmail.com</a></li>
+        <li>WeChat: 🟢💬  outouu</li>
+        <li>📍 东京皇居，代代木公园， 荒川等等 — 🏃‍♂️ 周末不定期聚跑</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header">🇺🇸 纽约 岚山（Misty Mountain Runners）</div>
+    <img src="./assets/teams/team13岚山.jpg" alt="Su Team Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls>
+        <source src="./assets/videos/04岚山.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="team-contact">
+      <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系人:龙昌</strong></p>
+      <ul>
+        <li>Email: <a href="mailto:ongchang@mmrunners.org ">longchang@mmrunners.org </a></li>
+        <li>WeChat: 🟢💬  longchang83 </li>
+        <li>📍<a href="https://www.mmrunners.org/running/weekly-group-runs/" target="_blank">岚山各分部群跑信息信息</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header">🇸🇬 新加坡 椰风（Singapore Zephyr Run）</div>
+    <img src="./assets/teams/team20椰风.jpg" alt="Su Team Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls>
+        <source src="./assets/videos/08椰风.mp4" type="video/mp4">
+        Your browser does not support txhe video tag.
+      </video>
+    </div>
+    <div class="team-contact">
+        <p> <strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️</strong></p>
+        <div>👉 通过<a href="https://www.zrc.sg//" target="_blank">椰风网站</a>联系</div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header">🇺🇸 达拉斯（Dash）</div>
+    <img src="./assets/teams/team10dash.jpg" alt="Dash Runners Group Photo" class="team-photo">
+
+    <div class="team-video">
+      <video controls>
+        <source src="./assets/videos/team10dash.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="team-contact">
+      <p> <strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系人:Wendy You</strong></p>
+      <ul>
+        <li>Email: <a href="dashrungroup@gmail.com">dashrungroup@gmail.com</a></li>
+        <li>WeChat: 🟢💬  lvyangcungu</li>
+        <li>📍 Allen, TX — 🏃‍♂️ 每周六日 7:00AM</li>
+        <li>📍 Plano, TX — 🏃‍♂️ 每周六 7:00AM</li>
+        <li>📍 Dallas, TX — 🏃‍♂️ 每周日 7:00AM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header">🇦🇺 悉尼悦跑团（Joy Runners）</div>
+    <img src="./assets/individuals/Lujia.JPG" alt="Joy Runners Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls>
+        <source src="./assets/videos/02-Joy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="team-contact">
+      <p> <strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系人:Shiliang Zhao/ Lujia Zhao</strong></p>
+      <ul>
+        <li>shiliang.zhao@gmail.com / lukezhao79@hotmail.com</li>
+        <li>WeChat: 🟢💬 shiliang_zhao/lujia_zhao99</li>
+        <li>📍 Newington Marketplace  — 🏃‍♂️ 周日 6:00AM</li>
+        <li>📍 Parramatta Parkrun — 🏃‍♂️ 周六 7:45AM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header"> 🇺🇸 亚特兰大 红军（RED）</div>
+    <img src="./assets/teams/team15Red.jpg" alt="Red Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls poster = "./assets/RedPoster.png">
+        <source src="./assets/videos/06-红军.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="team-contact">
+      <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️</strong></p>
+         <div>👉  微信联系🟢💬: weihu1980</div>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header">🇺🇸 芝加哥 追风（WindRunner）</div>
+    <img src="./assets/teams/team11追风.jpg" alt="Joy Runners Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls>
+        <source src="./assets/videos/追风跑团简介.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="team-contact">
+        <p> <strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️</strong></p>
+        <div>👉 通过<a href="https://www.windrunnergroup.org/" target="_blank">追风网站</a>联系</div>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header">🇦🇺 墨尔本MRC（Mad Rabbit Crew）</div>
+    <img src="./assets/teams/MRC.jpeg" alt="MRC Runners Group Photo" class="team-photo">
+
+    <div class="team-video">
+      <video controls poster="./assets/MELBOURNE.png">
+        <source src="./assets/videos/2025_10_12_ChicagoMarathonMRCIntro.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="team-contact">
+        <p> <strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️</strong></p>
+        <div>👉 通过<a href="https://strava.app.link/eKJ8WiM75Wb" target="_blank">MRC Strava</a>联系</div>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header"> 🇨🇦 温哥华 乐跑俱乐部（LaPower）</div>
+    <img src="./assets/teams/LaPower.JPG" alt="LaPower Group Photo" class="team-photo">
+    <div class="team-video">
+      <iframe width="100%" height="315"
+        src="https://www.youtube.com/embed/yiZEKjEHk40"
+        title="Long Running Group Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="team-contact">
+        <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系人：Irene</strong></p>
+          <div>👉  微信联系🟢💬: Today_888999</div>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header"> 🇺🇸 新泽西 爱跑(Love to Run)</div>
+    <img src="./assets/teams/05爱跑.jpeg" alt="Love to Run Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls poster = './assets/爱跑poster.png'>
+        <source src="./assets/videos/新州爱跑.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="team-contact">
+        <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ </strong></p>
+        <div>👉 Email: <a href="mailto:info@love-to-run.org">info@love-to-run.org</a></div>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header">🇺🇸 新泽西 百骏（Bergen Runners）</div>
+    <img src="./assets/teams/30百骏.jpg" alt="Bergen Runners Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls>
+        <source src="./assets/videos/05-百骏.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="team-contact">
+        <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系人：Renny Shih/Amy Ko-Tang</strong></p>
+        <div>👉 Email: <a href="Bergenrunners@gmail.com">Bergenrunners@gmail.com</a></div>
+    </div>
+  </div>
+
+
+  <div class="team-card">
+    <div class="team-header">🇺🇸 西雅图 速（SU）</div>
+    <img src="./assets/teams/SU.JPG" alt="Su Team Group Photo" class="team-photo">
+    <div class="team-video">
+      <video controls poster="./assets/su poster.png">
+        <source src="./assets/videos/01-Su.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+     <div class="team-contact">
+      <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系方式：小红书@<a href="https://www.xiaohongshu.com/user/profile/6560020d000000000802f058">Seattle United Runners</a></strong></p>
+      <ul>
+        <li>📍Whole Food Market,Redmond,WA 98052 — 🏃‍♂️ 每周六日 8:00AM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <div class="team-header">🇺🇸 休斯顿 龙帮（Long Running Club）</div>
+    <img src="./assets/teams/team12龙帮.jpg" alt="Long Runners Team Group Photo" class="team-photo">
+    <div class="team-video">
+      <iframe width="100%" height="315"
+        src="https://www.youtube.com/embed/PwEBi9L-UUY"
+        title="Long Running Group Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+     <div class="team-contact">
+      <p><strong>🏃‍♀️🏃‍♂️欢迎参加群跑🏃‍♀️🏃‍♂️ 联系方式：facebook@<a href="https://www.facebook.com/share/g/1M4SMcqSg5/">Long Running Club</a></strong></p>
+      <ul>
+        <li>📍 Katy, TX — 🏃‍♂️ 每周日六 6:00AM</li>
+        <li>📍 Sugarland, TX — 🏃‍♂️ 每周六 8:00AM</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
