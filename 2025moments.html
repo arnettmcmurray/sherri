@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我最喜欢的照片画廊</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h3 {
+      color: #FF6B6B;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .slideshow {
+      position: relative;
+      width: 90%;
+      max-width: 700px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      background: black;
+      margin-bottom: 20px;
+    }
+
+    .slideshow img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: black;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .slideshow img.active {
+      opacity: 1;
+    }
+
+    /* Play/Pause Button */
+    .control-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+    }
+
+    .control-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .event-details {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #ddd;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      h3 {
+        font-size: 1.5rem;
+      }
+      .slideshow {
+        aspect-ratio: 16/9;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h3>2025芝马《我最喜欢的照片》</h3>
+
+  <div class="slideshow" id="slideshow">
+    <img src="./assets/moments/moment001.JPG">
+    <img src="./assets/moments/moment002.jpg">
+    <img src="./assets/moments/moment003.JPG">
+    <img src="./assets/moments/moment004.JPG">
+    <img src="./assets/moments/moment005.JPG">
+    <img src="./assets/moments/moment006.JPG">
+    <img src="./assets/moments/moment007.JPG">
+    <img src="./assets/moments/moment008.JPG">
+    <img src="./assets/moments/moment009.JPG">
+    <img src="./assets/moments/moment010.JPG">
+    <img src="./assets/moments/moment011.JPG">
+    <img src="./assets/moments/moment012.jpg">
+    <img src="./assets/moments/moment013.JPG">
+    <img src="./assets/moments/moment014.JPG">
+    <img src="./assets/moments/moment015.JPG">
+    <img src="./assets/moments/moment016.JPG">
+    <img src="./assets/moments/moment017.JPG">
+    <img src="./assets/moments/moment018.JPG">
+    <img src="./assets/moments/moment019.JPG">
+    <img src="./assets/moments/moment020.JPG">
+    <img src="./assets/moments/moment021.JPG">
+    <img src="./assets/moments/moment022.jpg">
+
+
+    <!-- Pause/Play Button -->
+    <button id="controlBtn" class="control-btn">⏸</button>
+  </div>
+
+  <div class="event-details">
+    更多驰跑团2025芝马照片信息，人脸识别等，请前往<br>
+
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll("#slideshow img");
+    const controlBtn = document.getElementById("controlBtn");
+    let index = 0;
+    let playing = true;
+    let timer;
+
+    // Auto set alt text
+    slides.forEach(slide => {
+      const fileName = slide.src.split("/").pop().split(".")[0];
+      slide.alt = fileName;
+    });
+
+    function showNextSlide() {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[index].classList.add("active");
+
+      const duration = parseInt(slides[index].dataset.duration) || 1000;
+      index = (index + 1) % slides.length;
+
+      if (playing) timer = setTimeout(showNextSlide, duration);
+    }
+
+    // Start slideshow
+    showNextSlide();
+
+    // Pause / Play toggle
+    controlBtn.addEventListener("click", () => {
+      if (playing) {
+        clearTimeout(timer);
+        playing = false;
+        controlBtn.textContent = "▶"; // change icon to Play
+      } else {
+        playing = true;
+        controlBtn.textContent = "⏸"; // change icon to Pause
+        showNextSlide();
+      }
+    });
+  </script>
+</body>
+</html>
